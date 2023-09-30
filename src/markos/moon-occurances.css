@@ -1,0 +1,54 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.moon-occurances-c {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/public/planet-moon-occurances.png");
+  /* background-image: url("/public/moon.png"); */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  /* opacity: 0.2; */
+}
+
+.moon-anchor {
+  width: 0;
+  height: 0;
+  /* opacity: 0; */
+  background: red;
+}
+
+.moon-orbiting-anchor {
+  /* position: absolute; */
+  /* transform: translateY(80vh); */
+  z-index: 100;
+  background-image: url("/public/moon.png");
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  animation-name: moon-orbit-occurance-anim;
+  animation-duration: 8s;
+  animation-timing-function: cubic-bezier(0.23, 0.95, 0.71, 0.95);
+  animation-fill-mode: forwards;
+}
+
+@keyframes moon-orbit-occurance-anim {
+  0% {
+    transform: rotate(0deg) translate(95vh);
+  }
+
+  100% {
+    transform: rotate(1020deg) translate(95vh);
+  }
+}
+.moon-occurance-counter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
