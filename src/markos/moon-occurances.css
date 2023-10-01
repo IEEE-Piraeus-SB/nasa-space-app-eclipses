@@ -1,0 +1,105 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.moon-occurances-c {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/public/planet-moon-occurances.png");
+  /* background-image: url("/public/moon.png"); */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  /* opacity: 0.2; */
+}
+
+.moon-anchor {
+  width: 1px;
+  height: 1px;
+  /* opacity: 0; */
+  background: red;
+}
+
+.moon-orbiting-anchor {
+  /* position: absolute; */
+  /* transform: translateY(80vh); */
+  z-index: 100;
+  background-image: url("/public/moon.png");
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  animation-name: moon-orbit-occurance-anim;
+  animation-duration: 7s;
+  animation-timing-function: cubic-bezier(0.23, 0.95, 0.71, 0.95);
+  animation-fill-mode: forwards;
+}
+
+@keyframes moon-orbit-occurance-anim {
+  0% {
+    transform: rotate(0deg) translate(100vh);
+  }
+
+  100% {
+    transform: rotate(1020deg) translate(100vh);
+  }
+}
+.moon-occurance-counter {
+
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.moon-occurance-h3{
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  max-width: 400px;
+  font-size: 2rem;
+  color: white;
+  font-weight: normal;
+  animation-name: fade-in;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-delay: 6.5s;
+  min-width: 150px;
+  /* margin: 0;
+  padding: 0; */
+}
+
+@media screen and (max-width:1079px) {
+  .moon-orbiting-anchor{
+    width: 200px;
+    height: 200px;
+    
+  }  
+  .moon-occurance-h3{
+    top: 5%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+  }
+}
+
+@keyframes fade-in {
+  0%{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.bold{
+  font-weight: bold;
+}
