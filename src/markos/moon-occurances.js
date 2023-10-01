@@ -7,7 +7,7 @@ function getRandomNumber() {
 const randArr = [];
 randArr.push(4);
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 20; i++) {
   randArr.push(getRandomNumber());
 }
 
@@ -18,4 +18,4 @@ const interval = setInterval(() => {
   counter.innerHTML = text;
   console.log(text, "blabla");
   if (randArr.length == 0) clearInterval(interval);
-}, 400);
+}, 200);
