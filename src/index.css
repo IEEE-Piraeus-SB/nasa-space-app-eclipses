@@ -87,12 +87,26 @@ body {
 #eclipse {
   border-radius: 100%;
   background-color: orange;
-  border: 2px solid orange;
   width: 30%;
   padding-bottom: 30%;
   position: fixed;
   left: 35%;
   transition: all 2s ease;
   opacity: 0;
+  -webkit-box-shadow:0px 0px 97px 10px rgba(224,168,0,0.9);
+-moz-box-shadow: 0px 0px 97px 10px rgba(224,168,0,0.9);
+box-shadow: 0px 0px 97px 10px rgba(224,168,0,0.9);
   /* padding-bottom: 65%; */
+}
+
+@media screen and (max-width:600px) {
+  .moon img{
+    width: 50%;
+  }
+  #eclipse{
+    width: 50%;
+    padding-bottom: 50%;
+    left: 25%;
+
+  }
 }
