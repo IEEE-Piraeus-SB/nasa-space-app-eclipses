@@ -13,18 +13,16 @@
   <body>
     <div class="space-background">
       <div class="moon" id="moon">
-        <img src="../public/moon3.png" alt="" />
+        <img src="../public/moon3.png" alt="" id="moonImage" />
         <div class="black-background" id="black-background">
-          <p class="hidden">
-            This is the moon before the start of the ecliplse.<br />
-            Still bright and still visible
-          </p>
-          <p class="hidden">This is a test</p>
+          <div id="eclipse"></div>
         </div>
-
+        <p class="text-container hidden" id="text-container">
+          This is info text 1
+        </p>
         <i class="fa-solid fa-arrow-down"></i>
       </div>
-      <img src="../public/sun_png.png" alt="" class="sun" />
+      <!-- <img src="../public/sun_png.png" alt="" class="sun" id="sunImage" /> -->
     </div>
     <script defer src="index.js"></script>
   </body>
