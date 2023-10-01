@@ -1,0 +1,112 @@
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: black;
+}
+.space-background {
+  width: 100%;
+  height: 300vh;
+  /* background: url("../public/space-background2.jpg"); */
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.moon {
+  width: 100%;
+  position: fixed;
+  top: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  z-index: 3;
+}
+.moon img {
+  width: 30%;
+  position: relative;
+}
+.black-background {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 80%, transparent);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  transition: all 1s ease;
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+.black-background p {
+  width: 30%;
+  padding: 1rem;
+  transition: all 1s ease;
+  opacity: 1;
+}
+.fa-arrow-down {
+  position: relative;
+  z-index: 3;
+  font-size: 50px;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.sun {
+  width: 65%;
+  position: fixed;
+  top: 17%;
+  left: 17%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.full-black {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 50%, transparent);
+}
+
+.text-container {
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  /* animation: fadeIn 1s ease; */
+}
+
+#moonImage {
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+#eclipse {
+  border-radius: 100%;
+  background-color: orange;
+  width: 30%;
+  padding-bottom: 30%;
+  position: fixed;
+  left: 35%;
+  transition: all 2s ease;
+  opacity: 0;
+  -webkit-box-shadow:0px 0px 97px 10px rgba(224,168,0,0.9);
+-moz-box-shadow: 0px 0px 97px 10px rgba(224,168,0,0.9);
+box-shadow: 0px 0px 97px 10px rgba(224,168,0,0.9);
+  /* padding-bottom: 65%; */
+}
+
+@media screen and (max-width:600px) {
+  .moon img{
+    width: 50%;
+  }
+  #eclipse{
+    width: 50%;
+    padding-bottom: 50%;
+    left: 25%;
+
+  }
+}
