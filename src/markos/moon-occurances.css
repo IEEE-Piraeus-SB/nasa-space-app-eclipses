@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Space Mono', monospace;
 }
 .moon-occurances-c {
   width: 100vw;

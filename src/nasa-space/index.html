@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .top-div {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero-img-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .hero-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hero-text-containter {
+        position: relative;
+        color: white;
+      }
+
+      .hero-text-containter h1 {
+        padding-top: 30%;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      .hero-text-containter p {
+        font-size: 1.5em;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="top-div">
+        <div class="hero-img-container">
+          <img src="/public/earth_hero_image.jpg" alt="Hero_Img" />
+        </div>
+        <div class="hero-text-containter">
+          <h1>NASA SPACE APP CHALLENGE</h1>
+          <p>Eclipses</p>
+        </div>
+      </div>
+      <section><div class="space-background">
+        <div class="moon" id="moon">
+          <img src="../../public/moon3.png" alt="" id="moonImage" />
+          <div class="black-background" id="black-background">
+            <div id="eclipse"></div>
+          </div>
+          <p class="text-container hidden" id="text-container">
+            Info text 1
+          </p>
+          <!-- <i class="fa-solid fa-arrow-down"></i> -->
+        </div>
+        <!-- <img src="../public/sun_png.png" alt="" class="sun" id="sunImage" /> -->
+      </div></section>
+      <section class="stars-gif-c">
+        <img  class="gif" src="/public/eclipse-gif.gif" alt="">
+      </section>
+
+<a class="link" href="./solar-eclipse.html" target="_blank">Lunar Solar</a>
+<!--section class="eclipse">
+    <h2>Lunar Eclipse</h2>
+    <div class="eclipse-container">
+        <div class="earth"></div>
+        <div class="moon"></div>
+        <div class="shadow"></div>
+    </div>
+    <p>A lunar eclipse occurs when the Earth passes between the sun and the moon.</p>
+</section-->
+    </main>
+    <script src="index.js">
+
+    </script>
+  </body>
+</html>
