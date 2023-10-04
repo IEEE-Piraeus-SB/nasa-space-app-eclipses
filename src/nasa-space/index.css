@@ -1,12 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-html,body {
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+html,
+body {
   padding: 0;
   margin: 0;
   position: relative;
   background-color: black;
   overflow-x: hidden;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
+
+main {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
 .space-background {
   width: 100%;
   height: 200vh;
@@ -15,6 +29,7 @@ html,body {
   position: relative;
   display: flex;
   justify-content: center;
+  background-color: red;
 }
 
 .moon {
@@ -24,9 +39,9 @@ html,body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: white;
+  color: black;
   z-index: 3;
-  opacity: 0;
+  opacity: 1;
 }
 .moon img {
   width: 30%;
@@ -98,39 +113,27 @@ html,body {
   left: 35%;
   transition: all 2s ease;
   opacity: 0;
-  -webkit-box-shadow:0px 0px 97px 10px rgba(224,168,0,0.9);
--moz-box-shadow: 0px 0px 97px 10px rgba(224,168,0,0.9);
-box-shadow: 0px 0px 97px 10px rgba(224,168,0,0.9);
+  -webkit-box-shadow: 0px 0px 97px 10px rgba(224, 168, 0, 0.9);
+  -moz-box-shadow: 0px 0px 97px 10px rgba(224, 168, 0, 0.9);
+  box-shadow: 0px 0px 97px 10px rgba(224, 168, 0, 0.9);
   /* padding-bottom: 65%; */
 }
 
-@media screen and (max-width:600px) {
-  .moon img{
+@media screen and (max-width: 600px) {
+  .moon img {
     width: 50%;
   }
-  #eclipse{
+  #eclipse {
     width: 50%;
     padding-bottom: 50%;
     left: 25%;
-
   }
-  .text-container{
+  .text-container {
     width: 50%;
   }
 }
 
-
-.stars-gif-c{
-  background-image: url("/public/stars-space.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}.gif{
-  width: 100vw;
-  height: 100vh;
-}
-a{
+a {
   width: 100vw;
   color: aliceblue;
   text-align: center;
