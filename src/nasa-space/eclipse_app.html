@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="eclipse.css" />
-    <link rel="stylesheet" href="moon-occurances.css" />
-    <link rel="stylesheet" href="hero.css" />
-    <link rel="stylesheet" href="solar-lunar.css" />
+    <link rel="stylesheet" href="style/eclipse.css" />
+    <link rel="stylesheet" href="style/moon-occurances.css" />
+    <link rel="stylesheet" href="style/hero.css" />
+    <link rel="stylesheet" href="style/solar-lunar.css" />
   </head>
   <body>
     <main>
@@ -22,7 +22,7 @@
         </div>
       </section>
       <!-- Eclipse Section -->
-      <section class="eclipse-section">
+      <section>
         <div class="space-background">
           <div class="moon" id="moon">
             <img src="/public/moon.png" alt="" id="moonImage" />
@@ -32,19 +32,20 @@
             <p class="text-container hidden" id="text-container">Info text 1</p>
             <!-- <i class="fa-solid fa-arrow-down"></i> -->
           </div>
-          <img src="/public/sun_png.png" alt="" class="sun" id="sunImage" />
+          <!-- <img src="../public/sun_png.png" alt="" class="sun" id="sunImage" /> -->
         </div>
       </section>
       <!-- Gif Section -->
-      <section class="stars-gif-c">
-        <img class="gif" src="/public/eclipse-gif.gif" alt="" />
+      <section class="stars-gif-container">
+        <div class="gif-overlay" id="gifOverlay">
+        </div>
+        <img class="gif" src="/public/eclipse-gif.gif" alt="representation of eclipses occuring" id="gif" />
       </section>
       <!-- Solar to lunar -->
       <section class="eclipse-container">
-        <div class="sun-irine">
+        <div class="sun">
           <img src="/public/sun_png.png" alt="The sun" />
         </div>
-
         <p id="text-solar" class="text-solar">
           A solar eclipse occurs when the Moon passes between Earth and the Sun,
           thereby obscuring the view of the Sun from a small part of the Earth,
@@ -60,16 +61,11 @@
 
         <div class="earth">
           <div id="moon-solar-lunar" class="moon-anchor-lunar">
-            <div class="moon-irine"></div>
+            <div class="moon"></div>
           </div>
         </div>
 
         <div class="shadow"></div>
-
-        <p>
-          A solar eclipse occurs when the moon passes between the sun and the
-          Earth.
-        </p>
       </section>
       <!-- Occurance Implementation -->
       <section class="moon-occurances-c">
@@ -90,6 +86,6 @@
       > -->
     </main>
   </body>
-  <script defer src="script_irini.js"></script>
-  <script defer src="index.js"></script>
+  <script src="script_irini.js"></script>
+  <script src="button_play.js"></script>
 </html>
