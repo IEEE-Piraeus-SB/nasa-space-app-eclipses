@@ -59,11 +59,11 @@ body {
   opacity: 0;
   transform: translateY(100px);
 }
-.sun {
+.sun-irine {
   padding: 0 0 150px 0;
 }
 
-.moon {
+.moon-irine {
   background-image: url("/public/moon.png");
   background-size: cover;
   position: absolute;
