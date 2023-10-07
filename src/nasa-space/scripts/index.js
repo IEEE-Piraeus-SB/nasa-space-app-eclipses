@@ -65,8 +65,8 @@ window.addEventListener("scroll", () => {
     blackBackground.style.top = "100%";
     // blackBackground.children[0].classList.add("hidden");
     // blackBackground.children[1].classList.add("hidden");
-    textContainer.classList.add("hidden");
-    textContainer.animate([{ opacity: "1" }, { opacity: "45" }], {
+    textContainer.style.opacity = 0;
+    textContainer.animate([{ opacity: "1" }, { opacity: "0" }], {
       duration: 500,
       iterations: 1,
     });
