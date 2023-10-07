@@ -12,11 +12,11 @@ body {
   position: relative;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
+  min-height: 140vh;
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-image: url("/public/universe.jpg");
+  background-image: url("/public/space-purple-blue-astronomy.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -59,11 +59,11 @@ body {
   opacity: 0;
   transform: translateY(100px);
 }
-.sun {
+.sun-irine {
   padding: 0 0 150px 0;
 }
 
-.moon {
+.moon-irine {
   background-image: url("/public/moon.png");
   background-size: cover;
   position: absolute;
@@ -103,7 +103,6 @@ body {
     transform: rotate(0deg);
   }
 }
-
 @keyframes spin-to-solar {
   0% {
     transform: rotate(0deg);
