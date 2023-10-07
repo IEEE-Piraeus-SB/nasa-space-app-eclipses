@@ -10,11 +10,12 @@ const secondParagraph = "Here we can see the start of the sun eclipse";
 const thirdParagraph =
   "Here we can see how the moon looks like in total sun eclipse.";
 
-const moonShadowStart = 600;
-const sunStart = 1200;
+const moonShadowStart = 1000;
+const sunStart = 1600;
 window.addEventListener("scroll", () => {
   if (window.scrollY >= moonShadowStart && window.scrollY < sunStart) {
-    blackBackground.style.top = "20%";
+    blackBackground.style.top = "30%";
+    blackBackground.style.opacity = 1;
     textContainer.classList.remove("hidden");
     textContainer.animate([{ opacity: "0" }, { opacity: "1" }], {
       duration: 500,
@@ -29,7 +30,7 @@ window.addEventListener("scroll", () => {
 
     // blackBackground.children[0].classList.remove("hidden");
     console.log(window.scrollY);
-  } else if (window.scrollY > sunStart && window.scrollY < 1500) {
+  } else if (window.scrollY > sunStart && window.scrollY < 2000) {
     blackBackground.style.top = "-10%";
     textContainer.classList.remove("hidden");
     textContainer.animate([{ opacity: "0" }, { opacity: "1" }], {
@@ -44,7 +45,7 @@ window.addEventListener("scroll", () => {
     eclipse.style.backgroundColor = "black";
 
     // blackBackground.style.opacity = "0";
-  } else if (window.scrollY > 1500) {
+  } else if (window.scrollY > 2000) {
     blackBackground.style.top = "-10%";
     textContainer.classList.remove("hidden");
     textContainer.animate([{ opacity: "1" }, { opacity: "0" }], {
